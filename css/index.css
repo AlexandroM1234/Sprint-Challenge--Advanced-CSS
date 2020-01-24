@@ -175,10 +175,23 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 nav a {
   padding: 1%;
   font-size: 1.5rem;
+}
+nav a:hover {
+  animation-name: color-change;
+  animation-duration: 1s ;
+}
+@keyframes color-change {
+  from {
+    color: black;
+  }
+  to {
+    color: blue;
+  }
 }
 @media (max-width:500px) {
   nav a {
