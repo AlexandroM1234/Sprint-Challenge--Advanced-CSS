@@ -2,18 +2,20 @@
 
 //need 2 mixins
 
-.phone-size(){
-    flex-direction: column;
+.phone-img(){
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    padding-left: 3%;
+    padding: 1%;
 }
 
-.phone-text(){
+.phone-img-reverse(){
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding:0 2%;
+    padding:1%;
+    margin: 0;
 }
 
 
@@ -29,11 +31,10 @@
     background-color:@bg-color;
     text-align: center;
     font-size: 1.5rem;
-    
+
     &:hover{
         color:@bg-color;
         background-color: @font-color;
-
     }
 
 }
