@@ -57,15 +57,24 @@
     }
   }
 
-  .walk {
+  .walk { // bottom of the site
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      .phone-img-reverse();
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 100%;
+        padding: 2%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -77,8 +86,12 @@
 
       .btn {
 
-        .custom-btn(@btn-bg-color,white,80px);
-        
+        .custom-btn(@btn-bg-color,white,30%);
+
+        @media @phone{
+          .custom-btn(@btn-bg-color,white,100%);
+          padding:4%;
+        }
       }
     }
 
@@ -90,6 +103,10 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      @media @phone{
+        .phone-img();
       }
     }
 
