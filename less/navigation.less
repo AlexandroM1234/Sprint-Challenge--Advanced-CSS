@@ -1,1 +1,38 @@
 // Navigation code here
+
+.title-top{ //title styling
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    h1{
+        font-family: @header-font;
+        font-size: 3rem;
+        color: @header-font-color;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    a{
+        padding: 1%;
+        font-size: 1.5rem;
+        &:hover{
+            animation-name:color-change ;
+            animation-duration:1s ;
+
+            @keyframes color-change {
+                from{color:black};
+                to{color: blue};
+            }
+        }
+
+        @media @phone{
+            padding: 3%;
+        }
+    }
+
+}
