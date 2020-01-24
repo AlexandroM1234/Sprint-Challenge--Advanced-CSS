@@ -160,6 +160,25 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.title-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-top h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 3rem;
+  color: #23293B;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  padding: 1%;
+  font-size: 1.5rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -175,6 +194,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .header-img {
+  border-radius: 15px;
 }
 .home .space-images {
   display: flex;
