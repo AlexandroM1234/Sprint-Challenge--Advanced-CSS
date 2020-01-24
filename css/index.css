@@ -164,6 +164,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2vh;
 }
 .title-top h1 {
   font-family: 'Russo One', sans-serif;
@@ -233,6 +234,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border-radius: 10px;
+  padding: 3%;
+  width: 80px;
+  color: white;
+  background-color: #22283A;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;

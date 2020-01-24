@@ -2,7 +2,38 @@
 
 //need 2 mixins
 
+.phone-size(){
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 3%;
+}
+
+.phone-text(){
+    width: 100%;
+    padding:0 2%;
+}
+
 
 
 
 //parametric mixin for buttons  needs 2 parameters parameters swaps bg-color and font-color
+
+.custom-btn(@bg-color,@font-color,@width){
+    border-radius: 10px;
+    padding:3%;
+    width: @width;
+    color:@font-color;
+    background-color:@bg-color;
+    text-align: center;
+    font-size: 1.5rem;
+    
+    &:hover{
+        color:@bg-color;
+        background-color: @font-color;
+
+    }
+
+}
